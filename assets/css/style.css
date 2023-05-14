@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap');
 
 body {
-    background-image: url("assets/images/iStock-1176728520.webp");
+    background-image: url("../images/iStock-1176728520.webp");
     background-size: cover;
     background-repeat: no-repeat;
     margin: -90px;
