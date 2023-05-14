@@ -1,49 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap');
 
 body {
-    background-image: url("../images/iStock-1176728520.webp");
+    background-image: url("../images/iStock-1176728520.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
-    margin: -90px;
-    padding: 0;
+}
+
+header {
+    text-align: center;
+    font-family: 'Mountains of Christmas', cursive;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
 }
 
 #title {
-    text-align: center;
-    font-family: 'Mountains of Christmas', cursive;
-    font-size: 56px;
-    margin: 30px 0 0 0;
-    color: red;
-    text-shadow: 0 0 10px rgb(10, 10, 10);
+    font-size: 36px;
+    color: rgb(255, 90, 90);
+    text-shadow: 1px 1px 10px black;
+
+    margin-top: -45px;
 }
 
 nav {
-    text-align: center;
-    margin: -90px;
-    font-family: 'Mountains of Christmas', cursive;
-    font-size: 24px;
-    padding: 5px 5px 5px 5px;
+    font-size: 26px;
     letter-spacing: 4px;
-    word-spacing: 10px;
+    word-spacing: 14px;
+
+    margin-top: -35px;
+}
+
+nav a:hover {
+    color: rgb(255, 90, 90);
 }
 
 #play-area {
-    background-color: #000000a4;
-    box-sizing: border-box;
-    width: 35%;
+    width: 450px;
     height: 70vh;
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
+    box-sizing: content-box;
     border-radius: 10px;
-    position: relative;
+    background-color: rgba(0, 0, 0, 0.693);
+
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     justify-content: space-around;
+
+    margin-left: auto;
+    margin-right: auto;
     padding: 1%;
-    padding-left: 80px;
-    padding-right: 80px;
+}
+
+#tally {
+    text-align: center;
+    width: 100%;
+    height: 3%;
 }
 
 .cards {
@@ -53,7 +64,8 @@ nav {
     text-align: center;
     align-content: center;
 
-    background-color: red;
+    border-color: 3px solid rgb(150, 255, 150);
+    background-color: rgb(255, 90, 90);
     border-radius: 10px;
     width: 80px;
     height: 80px;
