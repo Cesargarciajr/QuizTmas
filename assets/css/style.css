@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap');
+
+body {
+    background-image: url("/assets/images/iStock-1176728520.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    text-align: center;
+    font-family: 'Mountains of Christmas', cursive;
+}
+
+#title {
+    top:0;
+    font-size: 56px;
+    color: red;
+    text-shadow: 0 0 10px green;
+}
