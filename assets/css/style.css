@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&family=Wix+Madefor+Display&display=swap');
 
-
+/* Definig background image and styling*/
 body {
     background-image: url("../images/iStock-1176728520.jpg");
     background-size: cover;
@@ -8,6 +8,7 @@ body {
     margin: 0;
 }
 
+/* Styling heading and nav menu*/
 header {
     text-align: center;
     font-family: 'Mountains of Christmas', cursive;
@@ -36,6 +37,7 @@ nav a:hover {
     color: rgb(255, 90, 90);
 }
 
+/* Definig play area content and tally*/
 #play-area {
     width: 450px;
     height: 70vh;
@@ -55,11 +57,22 @@ nav a:hover {
 }
 
 #tally {
+    color: white;
     text-align: center;
     width: 100%;
-    height: 3%;
+    height: 5%;
+    margin: 1em 0 0 0;
 }
 
+#correct-answered {
+    margin-right: 5em;
+}
+
+#incorrect-answered {
+    margin-right: 5em;
+}
+
+/* Definig cards styling*/
 .card {
     object-fit: contain;
     color: white;
@@ -78,6 +91,7 @@ nav a:hover {
     transition: transform .5s;
 }
 
+/* Card flip effect*/
 .card.flip {
     transform: rotateY(180deg);
     /*backface-visibility: hidden;*/
