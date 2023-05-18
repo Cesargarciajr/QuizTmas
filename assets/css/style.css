@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&family=Wix+Madefor+Display&display=swap');
+
 
 body {
     background-image: url("../images/iStock-1176728520.jpg");
     background-size: cover;
+    padding: 0;
+    margin: 0;
 }
 
 header {
@@ -19,8 +22,6 @@ header a {
     font-size: 36px;
     color: rgb(255, 90, 90);
     text-shadow: 1px 1px 10px black;
-
-    margin-top: -45px;
 }
 
 nav {
@@ -49,6 +50,8 @@ nav a:hover {
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
+
+    perspective: 1000px;
 }
 
 #tally {
@@ -57,7 +60,8 @@ nav a:hover {
     height: 3%;
 }
 
-.cards {
+.card {
+    object-fit: contain;
     color: white;
     font-family: 'Mountains of Christmas', cursive;
     font-size: 24px;
@@ -69,4 +73,73 @@ nav a:hover {
     border-radius: 10px;
     width: 80px;
     height: 80px;
+
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+.card.flip {
+    transform: rotateY(180deg);
+    /*backface-visibility: hidden;*/
+}
+
+
+/* Contact page styling */
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+}
+
+#contact-us {
+    font-family: 'Mountains of Christmas', cursive;
+    color: rgb(255, 90, 90);
+    font-size: 48px;
+    margin: 0;
+    text-align: center;
+}
+
+#contact-paragraph {
+    font-family: 'Wix Madefor Display', sans-serif;
+    color: white;
+    font-size: 16px;
+    padding: 5% 5% 5% 10%;
+    margin: 0;
+}
+
+#name {
+    border-radius: 100px;
+    height: 35px;
+    box-shadow: 0px 4px 12px 2px white;
+    border: none;
+    margin: 0 0 45px 30px;
+}
+
+#email {
+    border-radius: 100px;
+    height: 35px;
+    box-shadow: 0px 4px 12px 2px white;
+    border: none;
+}
+
+#message {
+    border-radius: 22.5px;
+    height: 250px;
+    width: 375
+    px;
+    box-shadow: 0px 4px 12px 2px white;
+    border: none;
+    text-align: start;
+}
+
+#submit-btn {
+    background-color: rgb(255, 90, 90);
+    color: white;
+    border-radius: 100px;
+    height: 35px;
+    width: 350px;
+    box-shadow: 0px 4px 12px 2px white;
+    border: none;
 }
