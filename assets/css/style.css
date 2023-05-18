@@ -87,9 +87,12 @@ nav a:hover {
 
 #rules {
     color: white;
+    padding: 1%;
 }
 
-
+.rules-list li {
+    margin-bottom: 15px;
+}
 
 
 /* Contact page styling */
@@ -119,29 +122,32 @@ nav a:hover {
 
 #name {
     font-family: 'Wix Madefor Display', sans-serif;
-    border-radius: 100px;
     height: 35px;
     width: auto;
+    padding-inline: 15px;
     box-shadow: 0px 4px 12px 2px white;
+    border-radius: 100px;
     border: none;
-    margin: 0 0 45px 30px;
+    margin: 15px 0 45px 25px;
 }
 
 #email {
     font-family: 'Wix Madefor Display', sans-serif;
-    border-radius: 100px;
     height: 35px;
     width: auto;
+    padding-inline: 15px;
     box-shadow: 0px 4px 12px 2px white;
     border: none;
+    border-radius: 100px;
+    margin: 15px 0 45px 0px;
 }
 
 #message {
     font-family: 'Wix Madefor Display', sans-serif;
-    border-radius: 22.5px;
     height: 175px;
     width: 350px;
     box-shadow: 0px 4px 12px 2px white;
+    border-radius: 22.5px;
     border: none;
     padding: 3%;
 }
@@ -155,4 +161,8 @@ nav a:hover {
     width: 350px;
     border: none;
     margin-top: 30px;
+}
+
+input:focus::selection {
+    background-color: rgb(255, 90, 90);
 }
