@@ -83,6 +83,14 @@ nav a:hover {
     /*backface-visibility: hidden;*/
 }
 
+/* Rules page Styling*/
+
+#rules {
+    color: white;
+}
+
+
+
 
 /* Contact page styling */
 
@@ -110,36 +118,41 @@ nav a:hover {
 }
 
 #name {
+    font-family: 'Wix Madefor Display', sans-serif;
     border-radius: 100px;
     height: 35px;
+    width: auto;
     box-shadow: 0px 4px 12px 2px white;
     border: none;
     margin: 0 0 45px 30px;
 }
 
 #email {
+    font-family: 'Wix Madefor Display', sans-serif;
     border-radius: 100px;
     height: 35px;
+    width: auto;
     box-shadow: 0px 4px 12px 2px white;
     border: none;
 }
 
 #message {
+    font-family: 'Wix Madefor Display', sans-serif;
     border-radius: 22.5px;
-    height: 250px;
-    width: 375
-    px;
+    height: 175px;
+    width: 350px;
     box-shadow: 0px 4px 12px 2px white;
     border: none;
-    text-align: start;
+    padding: 3%;
 }
 
 #submit-btn {
+    font-family: 'Wix Madefor Display', sans-serif;
     background-color: rgb(255, 90, 90);
     color: white;
     border-radius: 100px;
     height: 35px;
     width: 350px;
-    box-shadow: 0px 4px 12px 2px white;
     border: none;
+    margin-top: 30px;
 }
