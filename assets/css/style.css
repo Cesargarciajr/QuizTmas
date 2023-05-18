@@ -90,6 +90,18 @@ nav a:hover {
     padding: 1%;
 }
 
+#rules-title {
+    font-family: 'Mountains of Christmas', cursive;
+    color: rgb(255, 90, 90);
+    font-size: 48px;
+    margin: 15px 0 0 0;
+    text-align: center;
+    word-spacing: 10px;
+}
+.rules-list {
+    margin: 45px 0 0 0;
+}
+
 .rules-list li {
     margin-bottom: 15px;
 }
