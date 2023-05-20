@@ -19,39 +19,50 @@
         </nav>
     </header>
     <main>
+        <div id="overlay"></div>
         <div id="play-area">
             <div id="tally">
                 <span id="correct-answered"><i class="fa-sharp fa-solid fa-circle-check" style="color: #61b6a7;"></i></i> 0</span>
                 <span id="incorrect-answered"><i class="fa-solid fa-circle-xmark" style="color: #ff5a5a;"></i> 0</span>
                 <span id="timer"><i class="fa-solid fa-stopwatch" style="color: #ffffff;"></i> 0</span>
             </div>
-            <div class="card">1</div>
-            <div class="card">2</div>
-            <div class="card">3</div>
-            <div class="card">4</div>
-            <div class="card">5</div>
-            <div class="card">6</div>
-            <div class="card">7</div>
-            <div class="card">8</div>
-            <div class="card">9</div>
-            <div class="card">10</div>
-            <div class="card">11</div>
-            <div class="card">12</div>
-            <div class="card">13</div>
-            <div class="card">14</div>
-            <div class="card">15</div>
-            <div class="card">16</div>
-            <div class="card">17</div>
-            <div class="card">18</div>
-            <div class="card">19</div>
-            <div class="card">20</div>
-            <div class="card">21</div>
-            <div class="card">22</div>
-            <div class="card">23</div>
-            <div class="card">24</div>
-            <div class="card">25</div>
+            <div class="card" data-modal-target="#modal">1</div>
+            <div class="card" data-modal-target="#modal">2</div>
+            <div class="card" data-modal-target="#modal">3</div>
+            <div class="card" data-modal-target="#modal">4</div>
+            <div class="card" data-modal-target="#modal">5</div>
+            <div class="card" data-modal-target="#modal">6</div>
+            <div class="card" data-modal-target="#modal">7</div>
+            <div class="card" data-modal-target="#modal">8</div>
+            <div class="card" data-modal-target="#modal">9</div>
+            <div class="card" data-modal-target="#modal">10</div>
+            <div class="card" data-modal-target="#modal">11</div>
+            <div class="card" data-modal-target="#modal">12</div>
+            <div class="card" data-modal-target="#modal">13</div>
+            <div class="card" data-modal-target="#modal">14</div>
+            <div class="card" data-modal-target="#modal">15</div>
+            <div class="card" data-modal-target="#modal">16</div>
+            <div class="card" data-modal-target="#modal">17</div>
+            <div class="card" data-modal-target="#modal">18</div>
+            <div class="card" data-modal-target="#modal">19</div>
+            <div class="card" data-modal-target="#modal">20</div>
+            <div class="card" data-modal-target="#modal">21</div>
+            <div class="card" data-modal-target="#modal">22</div>
+            <div class="card" data-modal-target="#modal">23</div>
+            <div class="card" data-modal-target="#modal">24</div>
+            <div class="card" data-modal-target="#modal">25</div>
         </div>
-        
+        <div class="modal" id="modal">
+            <div class="modal-header">
+                <div class="questions-here"><h3>Question?</h3></div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="answers">Answer 1</div>
+                <div class="answers">Answer 2</div>
+                <div class="answers">Answer 3</div>
+                <div class="answers">Answer 4</div>
+            </div>
     </main>
     <script src="https://kit.fontawesome.com/ce6ee9a357.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
