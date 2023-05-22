@@ -152,7 +152,13 @@ nav a:hover {
     border-radius: 100px;
     text-align: left;
     margin-bottom: 15px;
+    transition: all 0.3s;
 
+}
+
+.answers-btn:hover {
+    background: #a89895;
+    color: white;
 }
 
 .close-button {
