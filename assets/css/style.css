@@ -74,6 +74,7 @@ nav a:hover {
 
 /* Definig cards styling*/
 .card {
+    cursor: pointer;
     object-fit: contain;
     color: white;
     font-family: 'Mountains of Christmas', cursive;
@@ -102,6 +103,7 @@ nav a:hover {
 }
 
 .modal {
+    padding: 1%;
     width: 500px;
     max-width: 80%;
     background-color: #abd6df;
@@ -132,9 +134,16 @@ nav a:hover {
     padding: 10px 15px;
     font-size: 1.25rem;
     font-weight: bold;
+    border-bottom: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    
 }
 
-.answers {
+.answers-btn {
+    cursor: pointer;
     height: 2rem;
     width: 100%;
     background-color: inherit;
@@ -171,6 +180,7 @@ nav a:hover {
     right: 0;
     bottom: 0;
     position: fixed;
+    visibility: hidden;
 
     /*transition effect for the overlay*/
     transition: 200ms ease-in-out;
@@ -178,6 +188,7 @@ nav a:hover {
 
 #overlay.active {
     opacity: 1;
+    visibility: visible;
 }
 
 /* Rules page Styling*/

@@ -10,7 +10,9 @@
 <body>
     <header>
         <div id="title">
-            <a href="index.html"><h1>QuizTmas</h1></a>
+            <a href="index.html">
+                <h1>QuizTmas</h1>
+            </a>
         </div>
         <nav>
             <a href="index.html">Play</a>
@@ -22,7 +24,8 @@
         <div id="overlay"></div>
         <div id="play-area">
             <div id="tally">
-                <span id="correct-answered"><i class="fa-sharp fa-solid fa-circle-check" style="color: #61b6a7;"></i></i> 0</span>
+                <span id="correct-answered"><i class="fa-sharp fa-solid fa-circle-check"
+                        style="color: #61b6a7;"></i></i> 0</span>
                 <span id="incorrect-answered"><i class="fa-solid fa-circle-xmark" style="color: #ff5a5a;"></i> 0</span>
                 <span id="timer"><i class="fa-solid fa-stopwatch" style="color: #ffffff;"></i> 0</span>
             </div>
@@ -54,13 +57,19 @@
         </div>
         <div class="modal" id="modal">
             <div class="modal-header">
-                <div class="questions-here"><h3>Question?</h3></div>
+                <div class="questions-here">
+                    <h3>Question?</h3>
+                </div>
+                <div class="countDownTimer">
+                    <i class="fa-solid fa-stopwatch" style="color: #000000"></i>
+                    <span> </span>
+                </div>
             </div>
             <div class="modal-body">
-                <button class="answers">Answer 1</button>
-                <button class="answers">Answer 2</button>
-                <button class="answers">Answer 3</button>
-                <button class="answers">Answer 4</button>
+                <button class="answers-btn">Answer 1</button>
+                <button class="answers-btn">Answer 2</button>
+                <button class="answers-btn">Answer 3</button>
+                <button class="answers-btn">Answer 4</button>
                 <button data-close-button class="close-button">Pass</button>
             </div>
     </main>

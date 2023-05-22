@@ -1,12 +1,11 @@
 const cards = document.querySelectorAll('.card');
+cards.forEach(card => card.addEventListener('click', flipCard));
+let timerInterval;
+
 
 function flipCard() {
     this.classList.toggle('flip');
 }
-
-
-cards.forEach(card => card.addEventListener('click', flipCard));
-
 
 /* Moldar pop up */
 
@@ -18,6 +17,7 @@ openModalCards.forEach(button => {
     button.addEventListener('click', () => {
         const modal = document.querySelector(button.dataset.modalTarget);
         openModal(modal);
+        startQuestionTimer(modal);
     });
 });
 
@@ -25,6 +25,7 @@ closeModalButtons.forEach(button => {
     button.addEventListener('click', () => {
         const modal = button.closest('.modal');
         closeModal(modal);
+        clearInterval(timerInterval);
     });
 });
 
@@ -39,3 +40,27 @@ function closeModal(modal) {
     modal.classList.remove('active');
     overlay.classList.remove('active');
 }
+
+
+/** Count Down Timer */
+
+function startQuestionTimer(modal) {
+    clearInterval(timerInterval);
+    let timeRemaining = 31;
+    const timerElement = modal.querySelector('.countDownTimer span');
+
+    timerInterval = setInterval(() => {
+        timeRemaining--;
+        timerElement.textContent = timeRemaining;
+
+        if (timeRemaining <= -1) {
+            clearInterval(timerInterval);
+            alert("Times Up!");
+            closeModal(modal);
+        }
+    }, 1000);
+}
+
+/** Quiz functions */
+
+
