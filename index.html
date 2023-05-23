@@ -24,9 +24,10 @@
         <div id="overlay"></div>
         <div id="play-area">
             <div id="tally">
-                <span id="correct-answered"><i class="fa-sharp fa-solid fa-circle-check"
-                        style="color: #61b6a7;"></i></i> 0</span>
-                <span id="incorrect-answered"><i class="fa-solid fa-circle-xmark" style="color: #ff5a5a;"></i> 0</span>
+                <span><i class="fa-sharp fa-solid fa-circle-check" style="color: #61b6a7;"></i></span>
+                <span id="correct-answered"> 0</span>
+                <span><i class="fa-solid fa-circle-xmark" style="color: #ff5a5a;"></i></span>
+                <span id="incorrect-answered"> 0</span>
                 <span id="timer"><i class="fa-solid fa-stopwatch" style="color: #ffffff;"></i> 0</span>
             </div>
             <div class="card" data-modal-target="#modal">1</div>
@@ -58,20 +59,20 @@
         <div class="modal" id="modal">
             <div class="modal-header">
                 <div class="questions-here">
-                    <h3>Question?</h3>
+                    <h3 id="question">Question?</h3>
                 </div>
                 <div class="countDownTimer">
-                    <i class="fa-solid fa-stopwatch" style="color: #000000"></i>
+                    <i class="fa-solid fa-stopwatch" style="color: #ffff"></i>
                     <span> </span>
                 </div>
             </div>
-            <div class="modal-body">
-                <button class="answers-btn">Answer 1</button>
-                <button class="answers-btn">Answer 2</button>
-                <button class="answers-btn">Answer 3</button>
-                <button class="answers-btn">Answer 4</button>
-                <button data-close-button class="close-button">Pass</button>
+            <div id="answer-buttons">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
             </div>
+            <div><button data-close-button id="next-btn">Next</button></div>
     </main>
     <script src="https://kit.fontawesome.com/ce6ee9a357.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>

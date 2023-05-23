@@ -98,7 +98,9 @@ nav a:hover {
 }
 
 /* Modal pop up styling */
-*, *::after, *::before {
+*,
+*::after,
+*::before {
     box-sizing: border-box;
 }
 
@@ -106,7 +108,7 @@ nav a:hover {
     padding: 1%;
     width: 500px;
     max-width: 80%;
-    background-color: #abd6df;
+    background: #61b6a7;
     color: black;
     border: none;
     border-radius: 10px;
@@ -116,10 +118,10 @@ nav a:hover {
     top: 50%;
     left: 50%;
     z-index: 10;
-    
+
     display: flex;
     flex-direction: column;
-    
+
     /*zoom in efect*/
     transform: translate(-50%, -50%) scale(0);
     transition: 200ms ease-in-out;
@@ -127,27 +129,49 @@ nav a:hover {
 
 .modal.active {
     transform: translate(-50%, -50%) scale(1);
+    padding: 2%;
 }
 
 .modal-header {
     width: 100%;
-    padding: 10px 15px;
     font-size: 1.25rem;
     font-weight: bold;
     border-bottom: 1px solid #333;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid black;
-    
+    border-bottom: 1px solid white;
+
 }
 
-.answers-btn {
+#question {
+    text-align: left;
+    margin: 0 50px 20px 0;
+    color: white;
+}
+
+.countDownTimer {
+    color: white;
+    margin-bottom: 20px;
+}
+
+#answer-buttons {
+    padding-top: 40px;
+}
+
+.correct {
+    background: #9aeabc;
+}
+
+.incorrect {
+    background: rgb(255, 90, 90);
+}
+
+.btn {
     cursor: pointer;
     height: 2rem;
     width: 100%;
-    background-color: inherit;
-    box-shadow: 0px 3px 10px rgba(0 ,0, 5, .18);
+    box-shadow: 0px 3px 10px rgba(0, 0, 5, .18);
     border: none;
     border-radius: 100px;
     text-align: left;
@@ -156,21 +180,26 @@ nav a:hover {
 
 }
 
-.answers-btn:hover {
-    background: #a89895;
+.btn:hover:not([disabled]) {
+    background: #abd6df;
     color: white;
 }
 
-.close-button {
+.btn:disabled {
+    cursor: no-drop;
+}
+
+#next-btn {
     cursor: pointer;
     border: 1 px solid black;
     border-radius: 100px;
     border: none;
-    background-color: rgb(255, 90, 90);
+    background-color: #abd6df;
     box-shadow: 0px 3px 10px rgba(0, 0, 5, .18);
     font-size: 1.25rem;
     padding: 3%;
     margin-left: 40%;
+    display: none;
 }
 
 .modal-body {
@@ -212,6 +241,7 @@ nav a:hover {
     text-align: center;
     word-spacing: 10px;
 }
+
 .rules-list {
     margin: 45px 0 0 0;
 }
