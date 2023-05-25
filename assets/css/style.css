@@ -19,6 +19,12 @@ header a {
     color: inherit;
 }
 
+header a:hover {
+    text-decoration: none;
+    color: #61b6a7;    
+    text-shadow: 1px 1px 10px black;
+}
+
 #title {
     font-size: 36px;
     color: rgb(255, 90, 90);
