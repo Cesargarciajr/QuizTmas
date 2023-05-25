@@ -1,3 +1,4 @@
+/*Importing fonts from google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&family=Wix+Madefor+Display&display=swap');
 
 /* Definig background image and styling*/
@@ -18,7 +19,7 @@ header a {
     text-decoration: none;
     color: inherit;
 }
-
+/* Hover effect over links in the header element*/
 header a:hover {
     text-decoration: none;
     color: #61b6a7;    
@@ -31,6 +32,7 @@ header a:hover {
     text-shadow: 1px 1px 10px black;
 }
 
+/* Defining and styling the nav bar*/
 nav {
     font-size: 26px;
     letter-spacing: 4px;
@@ -38,12 +40,12 @@ nav {
 
     margin-top: -35px;
 }
-
+/* Hover effect over links in the navegation bar*/
 nav a:hover {
     color: rgb(255, 90, 90);
 }
 
-/* Definig play area content and tally*/
+/* Definig  and styling play area content and tally*/
 #play-area {
     width: 450px;
     height: 70vh;
@@ -93,6 +95,7 @@ nav a:hover {
     width: 80px;
     height: 80px;
 
+    /* 3d effect when card is flipped */
     transform-style: preserve-3d;
     transition: transform .5s;
 }
@@ -140,6 +143,8 @@ nav a:hover {
 
 .modal-header {
     width: 100%;
+    word-spacing: 4px;
+    font-family: 'Wix Madefor Display', sans-serif;
     font-size: 1.25rem;
     font-weight: bold;
     border-bottom: 1px solid #333;
@@ -149,6 +154,7 @@ nav a:hover {
     border-bottom: 1px solid white;
 
 }
+
 
 #question {
     text-align: left;
@@ -162,6 +168,7 @@ nav a:hover {
 }
 
 #answer-buttons {
+    font-family: 'Wix Madefor Display', sans-serif;
     padding-top: 40px;
 }
 

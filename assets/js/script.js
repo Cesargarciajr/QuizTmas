@@ -722,10 +722,12 @@ function selectAnswer(e) {
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
     if (isCorrect) {
+        clearInterval(timerInterval);
         selectedBtn.classList.add("correct");
         score++;
         correctAnswered.innerHTML = score;
     } else {
+        clearInterval(timerInterval);
         selectedBtn.classList.add("incorrect");
         wrong++;
         incorrectAnswered.innerHTML = wrong;
