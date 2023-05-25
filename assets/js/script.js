@@ -1,69 +1,4 @@
-const cards = document.querySelectorAll('.card');
-cards.forEach(card => card.addEventListener('click', flipCard));
-let timerInterval;
-
-
-function flipCard() {
-    this.classList.toggle('flip');
-}
-
-/* Moldar pop up */
-
-const openModalCards = document.querySelectorAll('[data-modal-target]');
-const closeModalButtons = document.querySelectorAll('[data-close-button]');
-const overlay = document.getElementById('overlay');
-
-openModalCards.forEach(button => {
-    button.addEventListener('click', () => {
-        const modal = document.querySelector(button.dataset.modalTarget);
-        openModal(modal);
-        startQuestionTimer(modal);
-        startQuiz();
-    });
-});
-
-closeModalButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const modal = button.closest('.modal');
-        closeModal(modal);
-        clearInterval(timerInterval);
-    });
-});
-
-function openModal(modal) {
-    if (modal == null) return;
-    modal.classList.add('active');
-    overlay.classList.add('active');
-}
-
-function closeModal(modal) {
-    if (modal == null) return;
-    modal.classList.remove('active');
-    overlay.classList.remove('active');
-}
-
-
-/** Count Down Timer */
-
-function startQuestionTimer(modal) {
-    clearInterval(timerInterval);
-    let timeRemaining = 31;
-    const timerElement = modal.querySelector('.countDownTimer span');
-
-    timerInterval = setInterval(() => {
-        timeRemaining--;
-        timerElement.textContent = timeRemaining;
-
-        if (timeRemaining <= -1) {
-            clearInterval(timerInterval);
-            alert("Times Up!");
-            closeModal(modal);
-        }
-    }, 1000);
-}
-
-/** Quiz functions */
-
+/** Variable for the Pool of Questions */
 const questions = [
         {
             question: "What year was the first recorded date of Christmas being celebrated?",
@@ -388,31 +323,381 @@ const questions = [
                 { text: "Margarita", correct: false },
                 { text: "Tequila", correct: false }
             ]
+        },
+        {
+            question: "What is the name of the main character in the movie 'Elf'?",
+            answers: [
+                { text: "Buddy", correct: true },
+                { text: "Walter", correct: false },
+                { text: "Jovie", correct: false },
+                { text: "Santa", correct: false }
+            ]
+        },
+        {
+            question: "What is the name of the traditional Mexican Christmas punch?",
+            answers: [
+                { text: "Ponche", correct: true },
+                { text: "Sangria", correct: false },
+                { text: "Margarita", correct: false },
+                { text: "Tequila", correct: false }
+            ]
+        },
+        {
+            question: "What is the traditional color of Christmas in many Western cultures?",
+            answers: [
+                { text: "Red and Green", correct: true },
+                { text: "Blue and Silver", correct: false },
+                { text: "White and Gold", correct: false },
+                { text: "Yellow and Purple", correct: false }
+            ]
+        },
+        {
+            question: "Which popular Christmas ballet features a young girl named Clara?",
+            answers: [
+                { text: "The Nutcracker", correct: true },
+                { text: "Swan Lake", correct: false },
+                { text: "Cinderella", correct: false },
+                { text: "Romeo and Juliet", correct: false }
+            ]
+        },
+        {
+            question: "What is the name of the snowman in the movie 'Frozen'?",
+            answers: [
+                { text: "Olaf", correct: true },
+                { text: "Sven", correct: false },
+                { text: "Elsa", correct: false },
+                { text: "Kristoff", correct: false }
+            ]
+        },
+        {
+            question: "In the song 'Frosty the Snowman,' what are Frosty's eyes made of?",
+            answers: [
+                { text: "Coal", correct: true },
+                { text: "Buttons", correct: false },
+                { text: "Carrots", correct: false },
+                { text: "Stones", correct: false }
+            ]
+        },
+        {
+            question: "What is the name of the character who tries to steal Christmas in Dr. Seuss' 'How the Grinch Stole Christmas'?",
+            answers: [
+                { text: "The Grinch", correct: true },
+                { text: "Cindy Lou Who", correct: false },
+                { text: "Max", correct: false },
+                { text: "Whoville", correct: false }
+            ]
+        },
+        {
+            question: "What is the last line of the poem ''Twas the Night Before Christmas''?",
+            answers: [
+                { text: "Happy Christmas to all, and to all a good night.", correct: true },
+                { text: "Santa Claus is coming to town.", correct: false },
+                { text: "Let it snow, let it snow, let it snow.", correct: false },
+                { text: "Jingle bells, jingle bells, jingle all the way.", correct: false }
+            ]
+        },
+        {
+            question: "Which country is credited with starting the tradition of decorating Christmas trees?",
+            answers: [
+                { text: "Germany", correct: true },
+                { text: "United States", correct: false },
+                { text: "England", correct: false },
+                { text: "France", correct: false }
+            ]
+        },
+        {
+            question: "What is the name of the angel who visits Mary in the Bible's Christmas story?",
+            answers: [
+                { text: "Gabriel", correct: true },
+                { text: "Michael", correct: false },
+                { text: "Raphael", correct: false },
+                { text: "Uriel", correct: false }
+            ]
+        },
+        {
+            question: "What is the name of the reindeer with a shiny nose in the song 'Rudolph the Red-Nosed Reindeer'?",
+            answers: [
+                { text: "Rudolph", correct: true },
+                { text: "Dasher", correct: false },
+                { text: "Prancer", correct: false },
+                { text: "Comet", correct: false }
+            ]
+        },
+        {
+            question: "What popular holiday dessert is typically made with crushed candy canes?",
+            answers: [
+                { text: "Peppermint Bark", correct: true },
+                { text: "Gingerbread Cookies", correct: false },
+                { text: "Fruitcake", correct: false },
+                { text: "Pumpkin Pie", correct: false }
+            ]
+        },
+        {
+            question: "In what country is the Christmas season often celebrated with a 'Festival of Lights'?",
+            answers: [
+                { text: "India", correct: true },
+                { text: "China", correct: false },
+                { text: "Japan", correct: false },
+                { text: "Brazil", correct: false }
+            ]
+        },
+        {
+            question: "What is the name of the traditional Christmas cake in England?",
+            answers: [
+                { text: "Christmas Pudding", correct: true },
+                { text: "Fruitcake", correct: false },
+                { text: "Yule Log", correct: false },
+                { text: "Apple Pie", correct: false }
+            ]
+        },
+        {
+            question: "Which US state is known as the 'Christmas Tree Capital of the World'?",
+            answers: [
+                { text: "Oregon", correct: true },
+                { text: "California", correct: false },
+                { text: "New York", correct: false },
+                { text: "Washington", correct: false }
+            ]
+        },
+        {
+            question: "In the movie 'A Christmas Story,' what gift does Ralphie desperately want?",
+            answers: [
+                { text: "Red Ryder BB Gun", correct: true },
+                { text: "Bicycle", correct: false },
+                { text: "Video Game Console", correct: false },
+                { text: "Puppy", correct: false }
+            ]
+        },
+        {
+            question: "What is the name of Santa Claus's wife?",
+            answers: [
+                { text: "Mrs. Claus", correct: true },
+                { text: "Mary Claus", correct: false },
+                { text: "Carol Claus", correct: false },
+                { text: "Emily Claus", correct: false }
+            ]
+        },
+        {
+            question: "What is the name of the reindeer that leads Santa's sleigh?",
+            answers: [
+                { text: "Dasher", correct: true },
+                { text: "Prancer", correct: false },
+                { text: "Vixen", correct: false },
+                { text: "Cupid", correct: false }
+            ]
+        },
+        {
+            question: "Which holiday beverage is made from beaten eggs, sugar, milk, and spices?",
+            answers: [
+                { text: "Eggnog", correct: true },
+                { text: "Hot Chocolate", correct: false },
+                { text: "Mulled Wine", correct: false },
+                { text: "Cider", correct: false }
+            ]
+        },
+        {
+            question: "What is the name of the boy who receives a magic ticket to the North Pole in the movie 'The Polar Express'?",
+            answers: [
+                { text: "Billy", correct: false },
+                { text: "Tommy", correct: false },
+                { text: "Johnny", correct: false },
+                { text: "Hero Boy", correct: true }
+            ]
+        },
+        {
+            question: "What is the name of the character played by Jim Carrey in the movie 'How the Grinch Stole Christmas'?",
+            answers: [
+                { text: "The Grinch", correct: false },
+                { text: "Max", correct: false },
+                { text: "Cindy Lou Who", correct: false },
+                { text: "Theodor 'Ted' Geisel", correct: true }
+            ]
+        },
+        {
+            question: "Which company introduced the concept of Santa Claus as we know him today in their advertising?",
+            answers: [
+                { text: "Coca-Cola", correct: true },
+                { text: "PepsiCo", correct: false },
+                { text: "McDonald's", correct: false },
+                { text: "Amazon", correct: false }
+            ]
+        },
+        {
+            question: "In the song 'Jingle Bells,' what kind of sleigh is mentioned?",
+            answers: [
+                { text: "One-horse open sleigh", correct: true },
+                { text: "Two-horse covered sleigh", correct: false },
+                { text: "Three-horse wooden sleigh", correct: false },
+                { text: "Four-horse carriage sleigh", correct: false }
+            ]
+        },
+        {
+            question: "What is the name of the little girl who believes in Santa Claus in the movie 'Miracle on 34th Street'?",
+            answers: [
+                { text: "Susan Walker", correct: true },
+                { text: "Sally Johnson", correct: false },
+                { text: "Sophie Davis", correct: false },
+                { text: "Sarah Thompson", correct: false }
+            ]
+        },
+        {
+            question: "What is the name of the toy Buzz Lightyear believes he is in the movie 'Toy Story'?",
+            answers: [
+                { text: "Buzz Lightyear", correct: false },
+                { text: "Woody", correct: false },
+                { text: "Rex", correct: false },
+                { text: "Mrs. Nesbitt", correct: true }
+            ]
+        },
+        {
+            question: "In the movie 'Home Alone,' where are the McCallisters going on vacation when they leave Kevin behind?",
+            answers: [
+                { text: "Paris, France", correct: true },
+                { text: "London, England", correct: false },
+                { text: "Rome, Italy", correct: false },
+                { text: "Sydney, Australia", correct: false }
+            ]
+        },
+        {
+            question: "What is the name of the famous ballet choreographed by Tchaikovsky and often performed during the holiday season?",
+            answers: [
+                { text: "The Nutcracker", correct: true },
+                { text: "Swan Lake", correct: false },
+                { text: "Coppélia", correct: false },
+                { text: "Giselle", correct: false }
+            ]
+        },
+        {
+            question: "What is the name of the boy who befriends a stranded alien in the movie 'E.T. the Extra-Terrestrial'?",
+            answers: [
+                { text: "Elliott", correct: true },
+                { text: "Michael", correct: false },
+                { text: "David", correct: false },
+                { text: "Henry", correct: false }
+            ]
+        },
+        {
+            question: "What is the name of the reindeer that is often depicted as Rudolph's love interest?",
+            answers: [
+                { text: "Clarice", correct: true },
+                { text: "Dancer", correct: false },
+                { text: "Blitzen", correct: false },
+                { text: "Cupid", correct: false }
+            ]
         }
     ];
 
+/** Variable to select Element to show question in the moldar popup */
 const questionElement = document.getElementById("question");
+
+/** Variable to select Element to display answers in the moldar popup */
 const answerButtons = document.getElementById("answer-buttons");
+
+/** Variable to select Element to display Next Butto in the moldar popup */
 const nextButton = document.getElementById("next-btn");
+
+/** Variable to select Element for correct answer in the moldar popup */
 const correctAnswered = document.getElementById("correct-answered");
+
+/** Variable to select Element for incorrect answer in the moldar popup */
 const incorrectAnswered = document.getElementById("incorrect-answered");
 
-let currentQuestionIndex = 0;
+/** */
+let shuffledQuestions
+let currentQuestionIndex
+
+/** Score points variable */
 let score = 0;
 let wrong = 0;
 
+
+/** Variable selecting ther cards */
+const cards = document.querySelectorAll('.card');
+
+/** Countdown timer variable */
+let timerInterval;
+
+/* Moldar pop up  variable seleting elements*/
+const openModalCards = document.querySelectorAll('[data-modal-target]');
+const closeModalButtons = document.querySelectorAll('[data-close-button]');
+const overlay = document.getElementById('overlay');
+
+/** Event listener to flip the card and call for function */
+cards.forEach(card => card.addEventListener('click', flipCard));
+
+/** Event listener to open modal popup when card is clicked and call for function */
+openModalCards.forEach(button => {
+    button.addEventListener('click', () => {
+        const modal = document.querySelector(button.dataset.modalTarget);
+        openModal(modal);
+        startQuestionTimer(modal);
+        startQuiz();
+    });
+});
+
+/** Event listener to close modal popup when card is clicked and call for function */
+closeModalButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const modal = button.closest('.modal');
+        closeModal(modal);
+        clearInterval(timerInterval);
+    });
+});
+
+/** Open Modal popup Function */
+function openModal(modal) {
+    if (modal == null) return;
+    modal.classList.add('active');
+    overlay.classList.add('active');
+}
+
+/** Close Modal popup Function */
+function closeModal(modal) {
+    if (modal == null) return;
+    modal.classList.remove('active');
+    overlay.classList.remove('active');
+}
+
+
+/** Flipping card function */
+function flipCard() {
+    this.classList.toggle('flip');
+}
+
+/** Count Down Timer Function*/
+function startQuestionTimer(modal) {
+    clearInterval(timerInterval);
+    let timeRemaining = 16;
+    const timerElement = modal.querySelector('.countDownTimer span');
+
+    timerInterval = setInterval(() => {
+        timeRemaining--;
+        timerElement.textContent = timeRemaining;
+
+        if (timeRemaining <= -1) {
+            clearInterval(timerInterval);
+            alert("Times Up!");
+            closeModal(modal);
+        }
+    }, 1000);
+}
+
+/** Quiz functions that runs inside the moldar popup*/
 function startQuiz() {
+    shuffledQuestions = questions.sort(() => Math.random() - .5);
     currentQuestionIndex = 0;
     nextButton.innerHTML = "Next";
     showQuestion();
 };
 
-function showQuestion() {
+/** Function to display question inside Moldar popup */
+function showQuestion(question) {
     resetState();
-    let currenQuestion = questions[currentQuestionIndex];
-    questionElement.innerHTML = currenQuestion.question;
+    let currentQuestion = shuffledQuestions[currentQuestionIndex];
+    /*questions.Math.floor(Math.random(questions[question]));*/
+    questionElement.innerHTML = currentQuestion.question;
 
-    currenQuestion.answers.forEach(answer => {
+    currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
         button.innerHTML = answer.text;
         button.classList.add("btn");
@@ -424,6 +709,7 @@ function showQuestion() {
     });
 };
 
+/** Function to restate the moldar popup style */
 function resetState() {
     nextButton.style.display = "none";
     while (answerButtons.firstChild) {
@@ -431,6 +717,7 @@ function resetState() {
     }
 }
 
+/** Check the correct and incorrect answers, disable the buttons and show the "next" button after clicking in one of the options*/
 function selectAnswer(e) {
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
@@ -450,6 +737,4 @@ function selectAnswer(e) {
         button.disabled = true;
     });
     nextButton.style.display = "block";
-}
-
-
+};
