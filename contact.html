@@ -3,17 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- linking stylesheet to the page-->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>QuizTmas</title>
 </head>
 
 <body>
+<!-- header of all three pages -->
     <header>
         <div id="title">
-            <a href="index.html">
-                <h1>QuizTmas</h1>
-            </a>
+            <h1>
+                <!-- link to the reaload and go back to homepage "index"-->
+                <a href="index.html">QuizTmas</a>
+            <h1>
         </div>
+        <!-- Navegation menu and respectives links to its pages-->
         <nav>
             <a href="index.html">Play</a>
             <a href="rules.html">Rules</a>
@@ -21,11 +25,15 @@
         </nav>
     </header>
     <main>
+        <!-- Play area structure that will be followed in the other pages as well-->
         <div id="play-area">
             <div>
+                <!-- Text area for contacting purpose -->
                 <h1 id="contact-us">Get in touch</h1>
                 <p id="contact-paragraph">Have any suggestion? Maybe want to share your thoughts? Get to know more about this project?
                     <br>Or send a letter to Santa? HO HO HO</p>
+
+                <!-- form structure -->    
                 <form class="form" >
                     <input id="name" type="text" placeholder="Name">
                     <input id="email" type="email" placeholder="Email">
@@ -36,6 +44,8 @@
             </div>
         </div>
     </main>
+    
+    <!-- linking JS script to the page -->
     <script src="assets/js/script.js"></script>
 </body>
 

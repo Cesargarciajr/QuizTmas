@@ -3,17 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- linking stylesheet to the page-->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>QuizTmas</title>
 </head>
 
 <body>
+<!-- header of all three pages -->
     <header>
         <div id="title">
             <h1>
+                <!-- link to the reaload and go back to homepage "index"-->
                 <a href="index.html">QuizTmas</a>
             <h1>
         </div>
+        <!-- Navegation menu and respectives links to its pages-->
         <nav>
             <a href="index.html">Play</a>
             <a href="rules.html">Rules</a>
@@ -21,15 +25,28 @@
         </nav>
     </header>
     <main>
+        <!-- Overlay to be activate only when modal popup is active disabling the user to click anything outside the popup-->
         <div id="overlay"></div>
+
+        <!-- Play area structure that will be followed in the other pages as well-->
         <div id="play-area">
+
+            <!-- Scoreboard area to count the answers -->
             <div id="tally">
+
+                <!-- correct answers icon -->
                 <span><i class="fa-sharp fa-solid fa-circle-check" style="color: #61b6a7;"></i></span>
                 <span id="correct-answered"> 0</span>
+
+                <!-- incorrect answers icon -->
                 <span><i class="fa-solid fa-circle-xmark" style="color: #ff5a5a;"></i></span>
                 <span id="incorrect-answered"> 0</span>
+
+                <!-- Timer icon -->
                 <span id="timer"><i class="fa-solid fa-stopwatch" style="color: #ffffff;"></i> 0</span>
             </div>
+
+            <!-- Cards structure for the game-->
             <div class="card" data-modal-target="#modal">1</div>
             <div class="card" data-modal-target="#modal">2</div>
             <div class="card" data-modal-target="#modal">3</div>
@@ -56,25 +73,39 @@
             <div class="card" data-modal-target="#modal">24</div>
             <div class="card" data-modal-target="#modal">25</div>
         </div>
+
+        <!-- modal popup structure -->
         <div class="modal" id="modal">
             <div class="modal-header">
+
+                <!-- header where the questions are placed-->
                 <div class="questions-here">
                     <h3 id="question">Question?</h3>
                 </div>
+
+                <!-- header where the count downtimer is placed-->
                 <div class="countDownTimer">
                     <i class="fa-solid fa-stopwatch" style="color: #ffff"></i>
                     <span> </span>
                 </div>
             </div>
+
+            <!-- buttons structure for answers -->
             <div id="answer-buttons">
                 <button class="btn">Answer 1</button>
                 <button class="btn">Answer 2</button>
                 <button class="btn">Answer 3</button>
                 <button class="btn">Answer 4</button>
             </div>
+
+            <!-- "next" button structure the appear only when answers button selected -->
             <div><button data-close-button id="next-btn">Next</button></div>
     </main>
+
+    <!-- linking the icons to font awesome -->
     <script src="https://kit.fontawesome.com/ce6ee9a357.js" crossorigin="anonymous"></script>
+
+    <!-- linking JS script to the page -->
     <script src="assets/js/script.js"></script>
 </body>
 
