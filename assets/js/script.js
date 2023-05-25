@@ -602,9 +602,10 @@ const correctAnswered = document.getElementById("correct-answered");
 /** Variable to select Element for incorrect answer in the moldar popup */
 const incorrectAnswered = document.getElementById("incorrect-answered");
 
-/** */
+/** Shuffles the questions when the page is loaded*/
 let shuffledQuestions
-let currentQuestionIndex
+let currentQuestionIndex = 0;
+shuffledQuestions = questions.sort(() => Math.random() - .5);
 
 /** Score points variable */
 let score = 0;
@@ -676,6 +677,8 @@ function startQuestionTimer(modal) {
 
         if (timeRemaining <= -1) {
             clearInterval(timerInterval);
+            wrong++;
+            incorrectAnswered.innerHTML = wrong;
             alert("Times Up!");
             closeModal(modal);
         }
@@ -684,8 +687,6 @@ function startQuestionTimer(modal) {
 
 /** Quiz functions that runs inside the moldar popup*/
 function startQuiz() {
-    shuffledQuestions = questions.sort(() => Math.random() - .5);
-    currentQuestionIndex = 0;
     nextButton.innerHTML = "Next";
     showQuestion();
 };
@@ -694,9 +695,8 @@ function startQuiz() {
 function showQuestion(question) {
     resetState();
     let currentQuestion = shuffledQuestions[currentQuestionIndex];
-    /*questions.Math.floor(Math.random(questions[question]));*/
     questionElement.innerHTML = currentQuestion.question;
-
+    currentQuestionIndex++;
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
         button.innerHTML = answer.text;
