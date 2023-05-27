@@ -612,6 +612,10 @@ let score = 0;
 let wrong = 0;
 
 
+
+const questionCounter = document.getElementById('question-counter');
+let questionOpened = 0;
+
 /** Variable selecting ther cards */
 const cards = document.querySelectorAll('.card');
 
@@ -662,7 +666,9 @@ function closeModal(modal) {
 
 /** Flipping card function */
 function flipCard() {
-    this.classList.toggle('flip');
+    this.classList.add('flip');
+    questionOpened++;
+    questionCounter.innerHTML = questionOpened;
 }
 
 /** Count Down Timer Function*/
