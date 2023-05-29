@@ -295,6 +295,16 @@ nav a:hover {
     margin: 0;
 }
 
+#contact-icons {
+    height: 200px;
+    width: auto;
+}
+
+#contact-icons a {
+    height: 45px;
+    width: 45px;
+}
+
 #name {
     font-family: 'Wix Madefor Display', sans-serif;
     height: 35px;
