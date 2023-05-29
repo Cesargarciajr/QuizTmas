@@ -10,28 +10,26 @@ Introduction
 
 # Contents
 
-* [**User Experience UX**](<#user-experience-ux>)
-    *  [User Stories](<#user-stories>)
-    * [Wireframes](<#wireframes>)
-    * [Site Structure](<#site-structure>)
-    * [Design Choices](<#design-choices>)
-* [**Features**](<#features>)
-    * [Landing Section](<#landing-section>)
-    * [About Us Section](<#about-us-section>)
-    * [Our Community Section](<#our-community-section>)
-    * [Join Us Section](<#join-us-section>)
-    * [Thank you Page](<#thank-you-page>)
-    * [Footer](<#footer>)
-    * [Future Features](<#future-features>)
-* [**Testing**](<#testing>)
-    * [Testing Process](<#testing-process>)
-    * [Bugs and Issues](<#bugs-and-issues>)
-* [**Technologies Used**](<#technologies-used>)
-* [**Deployment**](<#deployment>)
-* [**Credits**](<#credits>)
-    * [Content](<#content>)
-    * [Media](<#media>)
-* [**Acknowledgments**](<#acknowledgments>)
+- [Quiztimas](#quiztimas)
+- [Contents](#contents)
+  - [User Experience (UX)](#user-experience-ux)
+    - [User Stories](#user-stories)
+  - [Features](#features)
+    - [Play Section](#play-section)
+    - [Rules](#rules)
+    - [Contact Us](#contact-us)
+    - [Footer](#footer)
+    - [Future Features](#future-features)
+  - [Testing](#testing)
+    - [Testing Process](#testing-process)
+    - [Bugs and Issues](#bugs-and-issues)
+  - [Technologies Used](#technologies-used)
+  - [Deployment](#deployment)
+  - [Credits](#credits)
+    - [Content](#content)
+    - [Media](#media)
+  - [Acknowledgments](#acknowledgments)
+- [THANK YOU!](#thank-you)
 
 
     
@@ -166,6 +164,9 @@ First of all you need to have a [**GitHub**](https://github.com/Cesargarciajr/bl
   - [**HubSpot**](https://blog.hubspot.com/website/how-to-embed-google-map-in-html) - learn how to use Google Maps API.
   - [**W3 Schools**](https://www.w3schools.com/) - used for multiples researches and tutorials in HTML and CSS.
   - [**Color Hunt**](https://colorhunt.co/) - used to select colors of the project.
+  - [** Mmdn Web Docs**](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener) - learned how to remove html elements using DOM.
+  - [**Favicon Generator**](https://realfavicongenerator.net/) - used to generate a favIcon.
+  - [**Chat GPT**](https://chat.openai.com/) - used to generate the pool of 50 themed questions and answers.
 
 [Back to top](<#contents>)
 
