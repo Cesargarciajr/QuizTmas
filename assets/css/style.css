@@ -294,14 +294,12 @@ nav a:hover {
     margin: 0;
 }
 
-#contact-icons {
-    height: 200px;
-    width: auto;
-}
-
-#contact-icons a {
-    height: 45px;
-    width: 45px;
+#contact-icons{
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-top: 50px;
 }
 
 #name {
