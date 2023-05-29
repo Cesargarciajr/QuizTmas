@@ -167,6 +167,10 @@ First of all you need to have a [**GitHub**](https://github.com/Cesargarciajr/bl
   - [** Mmdn Web Docs**](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener) - learned how to remove html elements using DOM.
   - [**Favicon Generator**](https://realfavicongenerator.net/) - used to generate a favIcon.
   - [**Chat GPT**](https://chat.openai.com/) - used to generate the pool of 50 themed questions and answers.
+  - [**FreeCodeCamp**](https://www.youtube.com/@freecodecamp) - Watched tutorials how to make flip card effect.
+  - [**Easy Tutorials**](https://www.youtube.com/@EasyTutorialsVideo) - Watched tutorials how to make buttons for quiz answers.
+  - [**Web Dev Simplified**](https://www.youtube.com/@WebDevSimplified) - Watched tutorials how to make modal popup.
+  - [**The WebShala**](https://www.youtube.com/@TheWebShala) - Watched tutotirals how to make questions shows randomly.
 
 [Back to top](<#contents>)
 
