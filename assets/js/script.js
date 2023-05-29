@@ -1,4 +1,3 @@
-
 /** Variable for the Pool of Questions */
 const questions = [
     {
