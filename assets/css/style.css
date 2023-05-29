@@ -209,7 +209,6 @@ nav a:hover {
 
 #next-btn {
     cursor: pointer;
-    border: 1 px solid black;
     border-radius: 100px;
     border: none;
     background-color: #abd6df;
