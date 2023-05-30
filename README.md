@@ -6,7 +6,7 @@ Introduction
 
 [**Link to QuizTmas**](https://cesargarciajr.github.io/QuizTmas/)
 
-![Alt text](hero image"wireframes")
+![Alt text](assets/images/hero-readme.png "wireframes")
 
 # Contents
 
