@@ -40,18 +40,18 @@ This game was developed to challange your knowledge with fun fact about Christma
   ### User Stories
 
   - #### First-Time Visitor Goals
-        i.   As a First time user I want to be able to intuitively learn how to play the game without even reading the Game.
+<br>    i.   As a First time user I want to be able to intuitively learn how to play the game without even reading the Game.
 <br>    ii.  But if needed check the Rules and see if its clear.
 <br>    iii. I might have to contact the developer for any bug or leave a message.
 <br>    iv.  Have fun!
 
   - #### Returning Visitor Goals
-        i.   As returning user I want the be able to play the game straight away.
+<br>    i.   As returning user I want the be able to play the game straight away.
 <br>    ii.  Check if there is anyupdates to the game.
 <br>    iii. Have fun!
 
   - #### Frequent User Goals
-       i.   As returning user I want the be able to play the game straight away.
+<br>   i.   As returning user I want the be able to play the game straight away.
 <br>   ii.  Check if there is anyupdates to the game.
 <br>   iii. Have fun!
 
