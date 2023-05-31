@@ -1,6 +1,6 @@
 
 
-# QuizTimas
+<h1 align="center"><a href="https://cesargarciajr.github.io/QuizTmas/" target="_blank">QuizTimas</a></h1> 
 
 This game was developed to challange your knowledge with fun fact about Christmas. Its a combinations of a memory game template but instead of pictures when a card is clicked you trigger a question quiz, which makes more exciting when playing bacause you can get to pick easy questions or really difficult ones. Chellange your friends and have a fun Christimas!! Ho Ho Ho
 
