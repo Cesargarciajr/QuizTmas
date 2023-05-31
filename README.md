@@ -92,9 +92,9 @@ This game was developed to challange your knowledge with fun fact about Christma
 
 ## Features
 
-  ### Play Section
+  ### Play Page
 
-  ![Alt text](./assets/images/play-page.png"Hero Section") 
+  ![Alt text](./assets/images/play-page.png "Play Page") 
 
 [Back to top](<#contents>)
 
