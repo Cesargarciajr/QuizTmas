@@ -142,7 +142,7 @@ ___
 ## Technologies Used
 I used the following technologies, platforms and support in building my project:
 - Wireframes and mockups were designed in [**Balsamiq**](https://balsamiq.com/wireframes/desktop/#)
-- The website is built with HTML and CSS only.
+- The website is built with HTML, CSS and JavaScript.
 - The [**Code Institute**](https://codeinstitute.net/) modules/lessons aided my learning and many of the concepts learned were applied in this project.
 - [**GitHub**](https://github.com/Cesargarciajr/bloom-of-life) was used for the project repository.
 - [**Google Fonts**](https://fonts.google.com/) was used for all fonts on the site.
@@ -172,7 +172,7 @@ First of all you need to have a [**GitHub**](https://github.com/Cesargarciajr/bl
 ## Credits
 
   ### Content  
-  - [**Code Institute**](https://codeinstitute.net/)  - HTML and CSS module content
+  - [**Code Institute**](https://codeinstitute.net/)  - JavaScript Module and Tutor Support.
   - [**GitHub**](https://github.com/) - for deployment and host.
   - [**GitPod**](https://gitpod.io/) - for IDE and editor of the code.
   - [**Precious Ijege**](https://www.linkedin.com/in/precious-ijege-908a00168/) - Mentor helping with insights and coding fix.
