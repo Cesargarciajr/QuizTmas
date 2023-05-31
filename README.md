@@ -14,6 +14,9 @@ This game was developed to challange your knowledge with fun fact about Christma
 - [Contents](#contents)
   - [User Experience (UX)](#user-experience-ux)
     - [User Stories](#user-stories)
+    - [Wireframes](#wireframes)
+    - [Site Structure](#site-structure)
+    - [Desing Choices](#design-choices)    
   - [Features](#features)
     - [Play Page](#play-page)
     - [Modal PopUp](#modal-popup)
@@ -24,6 +27,7 @@ This game was developed to challange your knowledge with fun fact about Christma
     - [Game Over Message](#game-over-message)
     - [Rules Page](#rules-page)
     - [Contact Page](#contact-page)
+    - [Future Features](#future-features)
   - [Testing](#testing)
     - [Testing Process](#testing-process)
     - [Bugs and Issues](#bugs-and-issues)
@@ -35,8 +39,7 @@ This game was developed to challange your knowledge with fun fact about Christma
   - [Acknowledgments](#acknowledgments)
 - [THANK YOU!](#thank-you)
 
-
-    
+___
 
 
 ## User Experience (UX)
@@ -189,7 +192,6 @@ I used the following technologies, platforms and support in building my project:
 - [**FontAwesome**](https://fontawesome.com/) was used for the social media icons which then had additional styling applied to them.
 - [**Colors CO**](https://coolors.co/) was used to create a colour pallete for this readme file.
 - [**Adobe Colors**](https://color.adobe.com/pt/create/color-contrast-analyzer) and contrast was used to pick color and check if the contrast was good enough for users.
-- Also had to learn how to use Flexbox which plays a important role in positioning the sections and elements in the website which I learned from [**W3 Schools**](https://www.w3schools.com/default.asp)
 
 [Back to top](<#contents>)
 
