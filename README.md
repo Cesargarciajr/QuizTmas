@@ -124,6 +124,18 @@ This game was developed to challange your knowledge with fun fact about Christma
 
 ## Testing
 
+- Tested in differents mobile devices and chrome web browser
+- Tested using the [**CCS validador**](https://www.w3.org/)
+- Tested using the [**HTML validator**](https://validator.w3.org/nu/)
+- Tested using the [**JsHint Validator**](https://jshint.com/)
+- Tested using the Lightroom dev tool from Google Chrome
+
+You can see the reports below as mentioned before:
+
+![Alt text](assets/images/css-validator.png "CSS report")
+![Alt text](assets/images/Html-checker.png "HTML report")
+![Alt text](assets/images/JsHint.png "JsHint report")
+![Alt text](assets/images/lighthouse-testing.png "Chrome LightHouse report")
 
 [Back to top](<#contents>)
 
