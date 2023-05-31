@@ -15,11 +15,15 @@ This game was developed to challange your knowledge with fun fact about Christma
   - [User Experience (UX)](#user-experience-ux)
     - [User Stories](#user-stories)
   - [Features](#features)
-    - [Play Section](#play-section)
-    - [Rules](#rules)
-    - [Contact Us](#contact-us)
-    - [Footer](#footer)
-    - [Future Features](#future-features)
+    - [Play Page](#play-page)
+    - [Modal PopUp](#modal-popup)
+    - [Answer Buttons](#answer-buttons)
+    - [TimesUp Alert](#timesup-alert)
+    - [TimesUp Alert](#timesup-alert)
+    - [Hidden Cards](#hidden-cards)
+    - [Game Over Message](#game-over-message)
+    - [Rules Page](#rules-page)
+    - [Contact Page](#contact-page)
   - [Testing](#testing)
     - [Testing Process](#testing-process)
     - [Bugs and Issues](#bugs-and-issues)
@@ -104,13 +108,13 @@ This game was developed to challange your knowledge with fun fact about Christma
   
 [Back to top](<#contents>)
         
-  ### Answers Buttons
+  ### Answer Buttons
 
   ![Alt text](./assets/images/answer-buttons.png "Answer Buttons") 
 
 [Back to top](<#contents>)
 
-  ### Times Up Alert
+  ### TimesUp Alert
 
   ![Alt text](./assets/images/alert-timesup.png "Alert Times Up") 
  
