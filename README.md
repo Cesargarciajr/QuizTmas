@@ -1,6 +1,6 @@
 
 
-# Quiztimas
+# QuizTimas
 
 This game was developed to challange your knowledge with fun fact about Christmas. Its a combinations of a memory game template but instead of pictures when a card is clicked you trigger a question quiz, which makes more exciting when playing bacause you can get to pick easy questions or really difficult ones. Chellange your friends and have a fun Christimas!! Ho Ho Ho
 
@@ -40,10 +40,20 @@ This game was developed to challange your knowledge with fun fact about Christma
   ### User Stories
 
   - #### First-Time Visitor Goals
+    i.   As a First time user I want to be able to intuitively learn how to play the game without even reading the Game.
+    ii.  But if needed check the Rules and see if its clear.
+    iii. I might have to contact the developer for any bug or leave a message.
+    iv.  Have fun!
 
   - #### Returning Visitor Goals
+    i.   As returning user I want the be able to play the game straight away.
+    ii.  Check if there is anyupdates to the game.
+    iii. Have fun!
 
   - #### Frequent User Goals
+    i.   As returning user I want the be able to play the game straight away.
+    ii.  Check if there is anyupdates to the game.
+    iii. Have fun!
 
   [Back to top](<#contents>)
   
@@ -51,7 +61,7 @@ This game was developed to challange your knowledge with fun fact about Christma
 
     The wireframes for QuizTmas were produced in [**Balsamiq**](https://balsamiq.com). There are frames for a full width display and a small mobile device. The final site varies slightly from the wireframes due to developments that occured during the creation process.
 
-    ![Alt text]( "wireframes")
+    ![Alt text](assets/images/Wireframes.png "wireframes")
 
 [Back to top](<#contents>)
 
@@ -61,13 +71,20 @@ This game was developed to challange your knowledge with fun fact about Christma
 [Back to top](<#contents>)
 
   - ### Design Choices
+    The idea of the design of the game was to blend a memory game template but instead of pictures when a card is clicked you trigger a question quiz, which makes more exciting when playing bacause you can get to pick easy questions or really difficult ones, full of animatinos in 3D and smooth transitions to make the UX even more seamless and intuitive.
 
     - #### Typography
-        - 
+        - Mountains of Christmas font from [**Google Fonts**](https://fonts.google.com/)
+
+        ![Alt text](./assets/images/mountains-of-christmas-font.png "Mountains of Christmas Font")
+
+        - Wix Madefor Display font from [**Google Fonts**](https://fonts.google.com/)
+
+        ![Alt text](./assets/images/wix-madefor-display-font.png "Wix Madefor Display Font")
 
     - #### Color Scheme
 
-  ![Alt text]( "colour pallete")
+  ![Alt text](./assets/images/ColorPallete.png "colour pallete")
 
 [Back to top](<#contents>)
 
