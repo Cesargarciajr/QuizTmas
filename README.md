@@ -66,6 +66,8 @@ This game was developed to challange your knowledge with fun fact about Christma
 [Back to top](<#contents>)
 
   - ### Site Structure
+
+    The QuizTmas game was structured in HTML in 3 different pages: [**Play**], [**Rules**] and [**Contact**]. All the styling was developed in CSS and the logic in vanilla JavaScript. Its a combinations of a memory game template but instead of pictures when a card is clicked you trigger a question quiz, which makes more exciting when playing bacause you can get to pick easy questions or really difficult ones. The effects and transitions combined with modal popup engine makes the whole experience more pleasant and a feeling of well built.
     
 
 [Back to top](<#contents>)
@@ -92,30 +94,52 @@ This game was developed to challange your knowledge with fun fact about Christma
 
   ### Play Section
 
-  ![Alt text]( "Hero Section") 
+  ![Alt text](./assets/images/play-page.png"Hero Section") 
 
 [Back to top](<#contents>)
 
-  ### Rules
+  ### Modal PopUp
+
+  ![Alt text](./assets/images/modal-popup.png "Modal Popup") 
   
+[Back to top](<#contents>)
         
-  ![Alt text]( "About Us Section")
+  ### Answers Buttons
+
+  ![Alt text](./assets/images/answer-buttons.png "Answer Buttons") 
 
 [Back to top](<#contents>)
 
-  ### Contact Us
+  ### Times Up Alert
 
-  ![Alt text]( "Our Community Section") 
-
-[Back to top](<#contents>)
-
-
-  ### Footer
+  ![Alt text](./assets/images/alert-timesup.png "Alert Times Up") 
  
-
-  ![Alt text]( "Footer")
-
 [Back to top](<#contents>)
+
+  ### Hidden Cards
+
+  ![Alt text](./assets/images/hidden-cards.png "Hidden Cards") 
+ 
+[Back to top](<#contents>)
+
+  ### Game Over Message
+
+  ![Alt text](./assets/images/game-over-message.png "Game Over Message") 
+ 
+[Back to top](<#contents>)
+
+  ### Rules Page
+
+  ![Alt text](./assets/images/rules-page.png "Rules Page") 
+ 
+[Back to top](<#contents>)
+
+  ### Contact Page
+
+  ![Alt text](./assets/images/contact-page.png "Contact Page") 
+ 
+[Back to top](<#contents>)
+
 
   ### Future Features
 
@@ -124,7 +148,7 @@ This game was developed to challange your knowledge with fun fact about Christma
 
 ## Testing
 
-- Tested in differents mobile devices and chrome web browser
+- Tested in differents mobile devices and web browsers
 - Tested using the [**CCS validador**](https://www.w3.org/)
 - Tested using the [**HTML validator**](https://validator.w3.org/nu/)
 - Tested using the [**JsHint Validator**](https://jshint.com/)
