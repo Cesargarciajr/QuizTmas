@@ -58,7 +58,7 @@ ___
 <br>    iii. Have fun!
 
   - #### Frequent User Goals
-<br>   i.   As returning user I want the be able to play the game straight away.
+<br>   i.   As frequent user I want the be able to play the game straight away.
 <br>   ii.  Check if there is anyupdates to the game.
 <br>   iii. Have fun!
 
@@ -72,7 +72,7 @@ ___
 [Back to top](<#contents>)
 
   - ### Site Structure
-    The QuizTmas game was structured in HTML in 3 different pages: [**Play**], [**Rules**] and [**Contact**]. All the styling was developed in CSS and the logic in vanilla JavaScript. Its a combinations of a memory game template but instead of pictures when a card is clicked you trigger a question quiz, which makes more exciting when playing bacause you can get to pick easy questions or really difficult ones. The effects and transitions combined with modal popup engine makes the whole experience more pleasant and a feeling of well built.
+    The QuizTmas game was structured in HTML in 3 different pages: [**Play**](#play-page), [**Rules**](#rules-page) and [**Contact**](#contact-page). All the styling was developed in CSS and the logic in vanilla JavaScript. Its a combinations of a memory game template but instead of pictures when a card is clicked you trigger a question quiz, which makes more exciting when playing bacause you can get to pick easy questions or really difficult ones. The effects and transitions combined with modal popup engine makes the whole experience more pleasant and a feeling of well built.
     
 
 [Back to top](<#contents>)
@@ -167,21 +167,32 @@ If the user picks a Santa Claus it will give him a 2 points Bonus. If the user p
 - Tested using the [**CCS validador**](https://www.w3.org/)
 - Tested using the [**HTML validator**](https://validator.w3.org/nu/)
 - Tested using the [**JsHint Validator**](https://jshint.com/)
-- Tested using the Lightroom dev tool from Google Chrome
+- Tested using the Lighthouse dev tool from Google Chrome
 
 You can see the reports below as mentioned before:
 
+Css validator report
 ![Alt text](assets/images/css-validator.png "CSS report")
+
+HTML checker report
 ![Alt text](assets/images/Html-checker.png "HTML report")
+
+Jshint report
 ![Alt text](assets/images/JsHint.png "JsHint report")
+
+Lighthouse dev tool from Google Chrome Report
 ![Alt text](assets/images/lighthouse-testing.png "Chrome LightHouse report")
 
 [Back to top](<#contents>)
 
 
- ### Bugs and Issues
+ ### Unsolved bugs
 
+Debugging and troubleshooting were done constantly throughout development, however still a problem with the website:
 
+When the user reaches the 10th question and tries to open the a new card the Game Over message appears on the modal popup but in the top right corner it counts as a "question" as displayed in the image below. One of the solutions would make the modal popup bigger when the message is displayed so it would cover the tally area. But I was not happy "hiding" the bug, I wanted to have a proper and better idea of solution, but unfurtunatly haven't managed the time to review the code and re-design a best solution yet.
+
+ ![Alt text](./assets/images/game-over-message.png "Game Over Message")
 
 
 [Back to top](<#contents>)
@@ -229,7 +240,7 @@ First of all you need to have a [**GitHub**](https://github.com/Cesargarciajr/bl
   - [**HubSpot**](https://blog.hubspot.com/website/how-to-embed-google-map-in-html) - learn how to use Google Maps API.
   - [**W3 Schools**](https://www.w3schools.com/) - used for multiples researches and tutorials in HTML and CSS.
   - [**Color Hunt**](https://colorhunt.co/) - used to select colors of the project.
-  - [** Mmdn Web Docs**](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener) - learned how to remove html elements using DOM.
+  - [**Mmdn Web Docs**](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener) - learned how to remove html elements using DOM.
   - [**Favicon Generator**](https://realfavicongenerator.net/) - used to generate a favIcon.
   - [**Chat GPT**](https://chat.openai.com/) - used to generate the pool of 50 themed questions and answers.
   - [**FreeCodeCamp**](https://www.youtube.com/@freecodecamp) - Watched tutorials how to make flip card effect.
@@ -255,6 +266,7 @@ First of all you need to have a [**GitHub**](https://github.com/Cesargarciajr/bl
 
 ## Acknowledgments
 
+This project definetly challenge my skills, I've learned so much throughout the process and can say I have a feeling of acomplishment from what I knew when I started this project and from what I know now. It definitly helped better understand concepts in coding also expand my knowledge in JavaScript. It was fun and enjoyable to built this game, I wan to thanks my mentor [**Precious Ijege**](https://www.linkedin.com/in/precious-ijege-908a00168/) for the support, help and guidance during the project.
 
 by [**Cesar Garcia**](https://github.com/Cesargarciajr)
 
