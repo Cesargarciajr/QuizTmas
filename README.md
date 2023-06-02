@@ -163,6 +163,8 @@ If the user picks a Santa Claus it will give him a 2 points Bonus. If the user p
 
 ## Testing
 
+The game was tested in differents 
+
 - Tested in differents mobile devices and web browsers
 - Tested using the [**CCS validador**](https://www.w3.org/)
 - Tested using the [**HTML validator**](https://validator.w3.org/nu/)
@@ -172,16 +174,31 @@ If the user picks a Santa Claus it will give him a 2 points Bonus. If the user p
 You can see the reports below as mentioned before:
 
 Css validator report
+
 ![Alt text](assets/images/css-validator.png "CSS report")
 
 HTML checker report
+
 ![Alt text](assets/images/Html-checker.png "HTML report")
 
 Jshint report
+
 ![Alt text](assets/images/JsHint.png "JsHint report")
 
 Lighthouse dev tool from Google Chrome Report
+
 ![Alt text](assets/images/lighthouse-testing.png "Chrome LightHouse report")
+
+### Testing Process
+
+  | Test                | Action                   | Success Criteria  |
+  | -------------       |-------------             | -----|
+  | Landingpage loads      | Navigate to website URL  | Page loads < 5s, no errors |
+  | Links            | Click on each Navigation link  | Correct section is redirected action performed |
+  | Gameplay  | Click the cards, answers buttons and counting the right, wrong and number of questions | The game is working as it should with no errors and malfunction |
+  | Responsiveness | Resize the viewport window from 320px upwards with Chrome Dev Tools. Use Responsive Design Checker to test various mobile, tablet, and large screen sizes | Page layout remains intact and adapts to screen size|
+  | Different web browsers | Runned the game in Google Chrome, Mozilla Firefox and Internet Explorer | Game works responsive and layout remains intact no errors or bug detected |
+  | Different screen devices | Runned the game using a Samsung Galaxy s20 and Iphone 13 | Game works responsive and layout remains intact no errors or bug detected |
 
 [Back to top](<#contents>)
 
