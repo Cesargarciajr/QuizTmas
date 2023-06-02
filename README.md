@@ -65,7 +65,6 @@ ___
   [Back to top](<#contents>)
   
   - ### Wireframes
-
     The wireframes for QuizTmas were produced in [**Balsamiq**](https://balsamiq.com). There are frames for a full width display and a small mobile device. The final site varies slightly from the wireframes due to developments that occured during the creation process.
 
     ![Alt text](assets/images/Wireframes.png "wireframes")
@@ -73,14 +72,13 @@ ___
 [Back to top](<#contents>)
 
   - ### Site Structure
-
     The QuizTmas game was structured in HTML in 3 different pages: [**Play**], [**Rules**] and [**Contact**]. All the styling was developed in CSS and the logic in vanilla JavaScript. Its a combinations of a memory game template but instead of pictures when a card is clicked you trigger a question quiz, which makes more exciting when playing bacause you can get to pick easy questions or really difficult ones. The effects and transitions combined with modal popup engine makes the whole experience more pleasant and a feeling of well built.
     
 
 [Back to top](<#contents>)
 
   - ### Design Choices
-    The idea of the design of the game was to blend a memory game template but instead of pictures when a card is clicked you trigger a question quiz, which makes more exciting when playing bacause you can get to pick easy questions or really difficult ones, full of animatinos in 3D and smooth transitions to make the UX even more seamless and intuitive.
+      The idea of the design of the game was to blend a memory game template but instead of pictures when a card is clicked you trigger a question quiz, which makes more exciting when playing bacause you can get to pick easy questions or really difficult ones, full of animatinos in 3D and smooth transitions to make the UX even more seamless and intuitive.
 
     - #### Typography
         - Mountains of Christmas font from [**Google Fonts**](https://fonts.google.com/)
@@ -157,7 +155,6 @@ ___
 
 
   ### Future Features
-
     We want to implement 2 different surprise cards. So everytime the user picks a card he can either pick a Santa Claus picture, a Grinch picture or a question.
     If the user picks a Santa Claus it will give him a 2 points Bonus. If the user picks a Grinch card it will lose 3 points, and if the user picks a question he has a chance either to win one point by picking the right answer or lose a point. 
 
